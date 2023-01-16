@@ -101,7 +101,7 @@
         <div class="galerie_images">
             <?php foreach($images as $image): ?>
             <article>
-                <img src="<?php echo($image['url']);?>" alt="<?php echo($image['alt']);?>">
+                <img src="<?php echo($image['url']);?>" width="<?php echo($image['width']);?>" height="<?php echo($image['height']);?>" alt="<?php echo($image['alt']);?>">
             </article>
             <?php endforeach; ?>
         </div>

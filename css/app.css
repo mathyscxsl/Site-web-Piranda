@@ -339,5 +339,17 @@ section {
   color: white;
   line-height: 4vh;
 }
+.galerie .galerie_images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: space-between;
+  max-width: 75vw;
+  margin: 48px auto 0 auto;
+}
+.galerie .galerie_images img {
+  width: 250px;
+  height: 250px;
+}
 
 /*# sourceMappingURL=app.css.map */
