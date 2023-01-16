@@ -158,7 +158,7 @@ section {
   display: block;
   border: solid 2px #45B573;
   padding: 8px 48px;
-  width: min-content;
+  width: max-content;
   text-decoration: none;
   font-family: "Roboto";
   font-size: 1rem;
@@ -217,7 +217,7 @@ section {
   display: block;
   border: solid 2px #45B573;
   padding: 8px 48px;
-  width: min-content;
+  width: max-content;
   text-decoration: none;
   font-family: "Roboto";
   font-size: 1rem;
@@ -350,6 +350,96 @@ section {
 .galerie .galerie_images img {
   width: 250px;
   height: 250px;
+}
+
+.contact_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.contact_btn p {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 1.1rem;
+}
+.contact_btn a {
+  display: block;
+  border: solid 2px #45B573;
+  padding: 8px 48px;
+  width: max-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #45B573;
+  transition: 0.3s ease-in;
+}
+.contact_btn a:hover {
+  transition: 0.3s ease-out;
+  border: solid 2px #D7A449;
+  color: #D7A449;
+}
+
+footer {
+  padding: 16px;
+  font-family: "Roboto";
+}
+footer hr {
+  width: 75%;
+  margin-top: 64px;
+}
+footer a,
+footer p {
+  color: #45B573;
+  text-decoration: none;
+}
+
+.footer_top {
+  display: flex;
+  margin-top: 16vh;
+  justify-content: center;
+  align-items: center;
+}
+.footer_top .footer_left p:first-child,
+.footer_top .footer_right p:first-child {
+  font-size: 1.1rem;
+}
+.footer_top .footer_left,
+.footer_top .footer_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 33%;
+}
+.footer_top img {
+  width: 190px;
+  height: 110px;
+}
+
+.footer_left ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  text-align: center;
+}
+.footer_left ul li a:hover {
+  transition: 0.3s ease-out;
+  color: #D7A449;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.footer_bottom hr {
+  border: solid 1px #45B573;
 }
 
 /*# sourceMappingURL=app.css.map */

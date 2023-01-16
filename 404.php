@@ -5,10 +5,7 @@
 
 ?>
 
-<section>
-    <p>Erreur 404</p>
-</section>
-
+<h1>ERREUR 404</h1>
 <?php
 
     // Footer

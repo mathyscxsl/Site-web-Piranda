@@ -51,7 +51,7 @@ section {
             display: block;
             border: solid 2px #45B573;
             padding: 8px 48px;
-            width: min-content;
+            width: max-content;
             text-decoration: none;
             font-family: "Roboto";
             font-size: 1rem;
@@ -120,7 +120,7 @@ section {
             display: block;
             border: solid 2px #45B573;
             padding: 8px 48px;
-            width: min-content;
+            width: max-content;
             text-decoration: none;
             font-family: "Roboto";
             font-size: 1rem;
@@ -267,5 +267,37 @@ section {
             width: 250px;
             height: 250px;
         }
+    }
+}
+
+.contact_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    p {
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 1.1rem;
+    }
+
+    a {
+        display: block;
+        border: solid 2px #45B573;
+        padding: 8px 48px;
+        width: max-content;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Roboto";
+        font-size: 1rem;
+        color: #45B573;
+        transition: 0.3s ease-in;
+    }
+
+    a:hover {
+        transition: 0.3s ease-out;
+        border: solid 2px #D7A449;
+        color: #D7A449;
     }
 }
