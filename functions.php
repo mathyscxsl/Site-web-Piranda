@@ -10,4 +10,11 @@
     }
     add_action('get_header', 'remove_admin_login_header');
 
+    function debug($vars) {
+        echo('<pre>');
+        var_dump($vars);
+        echo('</pre>');
+        die('end');
+    }
+
 ?>

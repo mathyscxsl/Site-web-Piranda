@@ -18,6 +18,9 @@
     $image_atout4 = get_field('image_atout4');
 
     $image_galerie_top = get_field('image_galerie_top');
+
+    // Foreach images de la galerie
+    $images = get_field('galerie_photo');
 ?>
     
     <div class="video">
@@ -84,20 +87,6 @@
                     <p><?php echo(the_field('desc_atout2'));?></p>
                 </div>
             </div>
-            <div class="qualites_atout">
-                <img src="<?php echo($image_atout3['url']);?>" alt="<?php echo($image_atout3['alt']);?>">
-                <div class="qualites_texte">
-                    <p><?php echo(the_field('titre_atout3'));?></p>
-                    <p><?php echo(the_field('desc_atout3'));?></p>
-                </div>
-            </div>
-            <div class="qualites_atout">
-                <img src="<?php echo($image_atout4['url']);?>" alt="<?php echo($image_atout4['alt']);?>">
-                <div class="qualites_texte">
-                    <p><?php echo(the_field('titre_atout4'));?></p>
-                    <p><?php echo(the_field('desc_atout4'));?></p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -109,7 +98,13 @@
             <h3><?php echo(the_field('titre_galerie'));?></h3>
             <p><?php echo(the_field('desc_galerie'));?></p>
         </div>
-        <div class="galerie_images"></div>
+        <div class="galerie_images">
+            <?php foreach($images as $image): ?>
+            <article>
+                <img src="<?php echo($image['url']);?>" alt="<?php echo($image['alt']);?>">
+            </article>
+            <?php endforeach; ?>
+        </div>
     </section>
 
 <?php

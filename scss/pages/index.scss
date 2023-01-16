@@ -227,29 +227,37 @@ section {
 }
 
 // Partie "Galerie"
-.galerie_top {
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.galerie_content {
-    margin-top: 64px;
-    text-align: center;
-
-    h3 {
-        font-family: 'Cormorant_Garamond';
-        font-weight: bold;
-        font-size: 2rem;
-        color: #D7A449;
+.galerie {
+    .galerie_top {
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
-    p {
+    .galerie_content {
+        margin-top: 64px;
         text-align: center;
-        font-family: "Roboto";
-        font-size: 0.9rem;
-        color: white;
-        line-height: 4vh;
+
+        h3 {
+            font-family: 'Cormorant_Garamond';
+            font-weight: bold;
+            font-size: 2rem;
+            color: #D7A449;
+        }
+
+        p {
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 0.9rem;
+            color: white;
+            line-height: 4vh;
+        }
+    }
+
+    .galerie_images {
+        max-width: 75vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

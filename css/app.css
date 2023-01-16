@@ -318,22 +318,21 @@ section {
   font-size: 0.9rem;
 }
 
-.galerie_top img {
+.galerie .galerie_top img {
   width: 100%;
   height: auto;
 }
-
-.galerie_content {
+.galerie .galerie_content {
   margin-top: 64px;
   text-align: center;
 }
-.galerie_content h3 {
+.galerie .galerie_content h3 {
   font-family: "Cormorant_Garamond";
   font-weight: bold;
   font-size: 2rem;
   color: #D7A449;
 }
-.galerie_content p {
+.galerie .galerie_content p {
   text-align: center;
   font-family: "Roboto";
   font-size: 0.9rem;
