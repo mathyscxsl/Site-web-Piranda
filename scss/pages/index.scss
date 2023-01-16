@@ -1,0 +1,255 @@
+// Début de la page
+video {
+    width: 100%;
+}
+
+// Écart entre chaque bloc principal de la page
+section {
+    margin-top: 16vh;
+}
+
+// Section "Entreprise"
+
+.entreprise {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+    .entreprise-texte {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 40%;
+
+        h2 {
+            font-family: "Roboto";
+            color: white;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+        }
+
+        h3 {
+            font-family: 'Cormorant_Garamond';
+            font-weight: bold;
+            font-size: 2rem;
+            color: #D7A449;
+        }
+
+        hr {
+            width: 20%;
+            opacity: 0.5;
+        }
+
+        p {
+            font-family: "Roboto";
+            font-size: 0.9rem;
+            color: white;
+            line-height: 4vh;
+        }
+
+        a {
+            display: block;
+            border: solid 2px #45B573;
+            padding: 8px 48px;
+            width: min-content;
+            text-decoration: none;
+            font-family: "Roboto";
+            font-size: 1rem;
+            color: #45B573;
+            transition: 0.3s ease-in;
+        }
+
+        a:hover {
+            transition: 0.3s ease-out;
+            border: solid 2px #D7A449;
+            color: #D7A449;
+        }
+    }
+}
+
+// Section "Mon travail"
+
+.travail {
+    display: flex;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .travail-texte {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        h2 {
+            font-family: "Roboto";
+            color: white;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+        }
+
+        h3 {
+            font-family: 'Cormorant_Garamond';
+            font-weight: bold;
+            font-size: 2rem;
+            color: #D7A449;
+        }
+
+        hr {
+            width: 10%;
+            opacity: 0.5;
+        }
+
+        p {
+            max-width: 40%;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 0.9rem;
+            color: white;
+            line-height: 4vh;
+        }
+
+        a {
+            display: block;
+            border: solid 2px #45B573;
+            padding: 8px 48px;
+            width: min-content;
+            text-decoration: none;
+            font-family: "Roboto";
+            font-size: 1rem;
+            color: #45B573;
+            transition: 0.3s ease-in;
+        }
+
+        a:hover {
+            transition: 0.3s ease-out;
+            border: solid 2px #D7A449;
+            color: #D7A449;
+        }
+    }
+}
+
+// Section "Qualités"
+.qualites {
+    display: flex;
+    flex-direction: column;
+    gap: 16vh;
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fait_main,
+.sur_mesure {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.sur_mesure {
+    flex-direction: row-reverse;
+}
+
+.fait_main_texte,
+.sur_mesure_texte {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+
+    h2 {
+        font-family: "Roboto";
+        color: white;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+    }
+
+    h3 {
+        font-family: 'Cormorant_Garamond';
+        font-weight: bold;
+        font-size: 2rem;
+        color: #D7A449;
+    }
+
+    hr {
+        width: 30%;
+        opacity: 0.5;
+    }
+
+    p {
+        max-width: 80%;
+        text-align: left;
+        font-family: "Roboto";
+        font-size: 0.9rem;
+        color: white;
+        line-height: 4vh;
+    }
+}
+
+.qualites_atouts {
+    display: flex;
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qualites_atout {
+    display: flex;
+    gap: 16px;
+}
+
+.qualites_texte {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    p {
+        max-width: 70%;
+        color: #FFFFFF;
+        font-family: "Roboto";
+    }
+}
+
+.qualites_texte p:first-child {
+    font-size: 1.1rem;
+}
+
+.qualites_texte p:last-child {
+    font-size: 0.9rem;
+}
+
+// Partie "Galerie"
+.galerie_top {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.galerie_content {
+    margin-top: 64px;
+    text-align: center;
+
+    h3 {
+        font-family: 'Cormorant_Garamond';
+        font-weight: bold;
+        font-size: 2rem;
+        color: #D7A449;
+    }
+
+    p {
+        text-align: center;
+        font-family: "Roboto";
+        font-size: 0.9rem;
+        color: white;
+        line-height: 4vh;
+    }
+}

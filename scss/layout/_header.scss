@@ -1,0 +1,67 @@
+.site {
+    background-color: #2F2E2E;
+}
+
+header {
+    background-color: #222222;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 16px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 8%;
+}
+
+header nav ul li a {
+    position: relative;
+    display: block;
+    font-family: 'Cormorant_Garamond';
+    font-weight: bold;
+    text-decoration: none;
+    color: #45B573;
+    font-size: 1.7rem;
+}
+
+header nav ul li a:hover {
+    transition: 0.2s ease-in-out;
+    color: #D7A449;
+}
+
+#link+#link {
+    border-left: 1px solid #D7A449;
+}
+
+#link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #D7A449;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: 0.3s ease-in-out;
+}
+
+#link:hover::after {
+    transform: scaleX(1);
+}
+
+header nav ul li img {
+    width: 190px;
+    height: 110px;
+}
+
+.arrow {
+    position: fixed;
+    z-index: 10;
+    top: 90vh;
+    right: 4vw;
+}

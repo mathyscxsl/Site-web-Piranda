@@ -1,0 +1,348 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Cormorant_Garamond";
+  src: url("../../../uploads/2023/01/fonts/CormorantGaramond-Medium.woff2") format("woff2"), url("../../../uploads/2023/01/fonts/CormorantGaramond-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant_Garamond";
+  src: url("../../../uploads/2023/01/fonts/CormorantGaramond-Regular.woff2") format("woff2"), url("../../../uploads/2023/01/fonts/CormorantGaramond-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Cormorant_Garamond";
+  src: url("../../../uploads/2023/01/fonts/CormorantGaramond-Bold.woff2") format("woff2"), url("../../../uploads/2023/01/fonts/CormorantGaramond-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../uploads/2023/01/fonts/Roboto-Bold.woff2") format("woff2"), url("../../../uploads/2023/01/fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../uploads/2023/01/fonts/Roboto-Medium.woff2") format("woff2"), url("../../../uploads/2023/01/fonts/Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../../../uploads/2023/01/fonts/Roboto-Regular.woff2") format("woff2"), url("../../../uploads/2023/01/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.site {
+  background-color: #2F2E2E;
+}
+
+header {
+  background-color: #222222;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  padding: 16px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 8%;
+}
+
+header nav ul li a {
+  position: relative;
+  display: block;
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  text-decoration: none;
+  color: #45B573;
+  font-size: 1.7rem;
+}
+
+header nav ul li a:hover {
+  transition: 0.2s ease-in-out;
+  color: #D7A449;
+}
+
+#link + #link {
+  border-left: 1px solid #D7A449;
+}
+
+#link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #D7A449;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: 0.3s ease-in-out;
+}
+
+#link:hover::after {
+  transform: scaleX(1);
+}
+
+header nav ul li img {
+  width: 190px;
+  height: 110px;
+}
+
+.arrow {
+  position: fixed;
+  z-index: 10;
+  top: 90vh;
+  right: 4vw;
+}
+
+video {
+  width: 100%;
+}
+
+section {
+  margin-top: 16vh;
+}
+
+.entreprise {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.entreprise .entreprise-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 40%;
+}
+.entreprise .entreprise-texte h2 {
+  font-family: "Roboto";
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+.entreprise .entreprise-texte h3 {
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #D7A449;
+}
+.entreprise .entreprise-texte hr {
+  width: 20%;
+  opacity: 0.5;
+}
+.entreprise .entreprise-texte p {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: white;
+  line-height: 4vh;
+}
+.entreprise .entreprise-texte a {
+  display: block;
+  border: solid 2px #45B573;
+  padding: 8px 48px;
+  width: min-content;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #45B573;
+  transition: 0.3s ease-in;
+}
+.entreprise .entreprise-texte a:hover {
+  transition: 0.3s ease-out;
+  border: solid 2px #D7A449;
+  color: #D7A449;
+}
+
+.travail {
+  display: flex;
+  position: relative;
+}
+.travail img {
+  width: 100%;
+  height: auto;
+}
+.travail .travail-texte {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.travail .travail-texte h2 {
+  font-family: "Roboto";
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+.travail .travail-texte h3 {
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #D7A449;
+}
+.travail .travail-texte hr {
+  width: 10%;
+  opacity: 0.5;
+}
+.travail .travail-texte p {
+  max-width: 40%;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: white;
+  line-height: 4vh;
+}
+.travail .travail-texte a {
+  display: block;
+  border: solid 2px #45B573;
+  padding: 8px 48px;
+  width: min-content;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #45B573;
+  transition: 0.3s ease-in;
+}
+.travail .travail-texte a:hover {
+  transition: 0.3s ease-out;
+  border: solid 2px #D7A449;
+  color: #D7A449;
+}
+
+.qualites {
+  display: flex;
+  flex-direction: column;
+  gap: 16vh;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fait_main,
+.sur_mesure {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.sur_mesure {
+  flex-direction: row-reverse;
+}
+
+.fait_main_texte,
+.sur_mesure_texte {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  height: 100%;
+}
+.fait_main_texte h2,
+.sur_mesure_texte h2 {
+  font-family: "Roboto";
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+.fait_main_texte h3,
+.sur_mesure_texte h3 {
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #D7A449;
+}
+.fait_main_texte hr,
+.sur_mesure_texte hr {
+  width: 30%;
+  opacity: 0.5;
+}
+.fait_main_texte p,
+.sur_mesure_texte p {
+  max-width: 80%;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: white;
+  line-height: 4vh;
+}
+
+.qualites_atouts {
+  display: flex;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qualites_atout {
+  display: flex;
+  gap: 16px;
+}
+
+.qualites_texte {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.qualites_texte p {
+  max-width: 70%;
+  color: #FFFFFF;
+  font-family: "Roboto";
+}
+
+.qualites_texte p:first-child {
+  font-size: 1.1rem;
+}
+
+.qualites_texte p:last-child {
+  font-size: 0.9rem;
+}
+
+.galerie_top img {
+  width: 100%;
+  height: auto;
+}
+
+.galerie_content {
+  margin-top: 64px;
+  text-align: center;
+}
+.galerie_content h3 {
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2rem;
+  color: #D7A449;
+}
+.galerie_content p {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: white;
+  line-height: 4vh;
+}
+
+/*# sourceMappingURL=app.css.map */
