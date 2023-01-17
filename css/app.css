@@ -53,6 +53,28 @@
   background-color: #2F2E2E;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D7A449;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #D7A449;
+}
+
 header {
   background-color: #222222;
   position: sticky;
@@ -508,22 +530,26 @@ section {
   gap: 64px;
   margin-top: 16vh;
 }
-.conception .etapes .etape_gauche,
-.conception .etapes .etape_droite {
+.conception .etapes .etape {
   display: flex;
   gap: 32px;
 }
-.conception .etapes .etape_gauche h2,
-.conception .etapes .etape_droite h2 {
+.conception .etapes .etape h2 {
   color: #D7A449;
   font-family: "Cormorant_Garamond";
   font-weight: bold;
   font-size: 2rem;
 }
-.conception .etapes .etape_droite {
+.conception .etapes .etape h3 {
+  color: #D7A449;
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.conception .etapes .etape:nth-child(even) {
   flex-direction: row-reverse;
 }
-.conception .etapes .etape_droite .etape_texte {
+.conception .etapes .etape:nth-child(even) .etape_texte {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -534,6 +560,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+.conception .etapes .etape_texte .etape_flex {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
 }
 
 .resultat {
@@ -563,6 +594,166 @@ section {
   font-family: "Roboto";
   font-size: 0.9rem;
   line-height: 3vh;
+}
+
+.contact {
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact .contact_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.contact h1 {
+  color: #D7A449;
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.contact hr {
+  width: 25%;
+}
+.contact p {
+  max-width: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 1rem;
+  line-height: 3vh;
+}
+
+.contact_form {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+.contact_form .form_top {
+  display: flex;
+}
+.contact_form .form_info {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  max-width: 30vw;
+  padding: 64px;
+  font-family: "Roboto";
+  text-align: center;
+  background-color: #363636;
+}
+.contact_form .form_info p {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+}
+.contact_form .form_info #title {
+  color: #D7A449;
+  font-size: 1.5rem;
+}
+.contact_form form {
+  width: 50vw;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding-left: 16px;
+}
+.contact_form form label {
+  color: #A7A7A7;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+.contact_form form input,
+.contact_form form textarea {
+  padding: 16px;
+  background-color: #363636;
+  border: none;
+  resize: none;
+  color: #FFFFFF;
+  font-family: "Roboto";
+}
+.contact_form form input {
+  height: 10%;
+}
+.contact_form .form_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+}
+.contact_form .form_bottom .form_check {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 8px;
+}
+.contact_form .form_bottom .form_check a {
+  font-weight: bold;
+  color: #45B573;
+  text-decoration: none;
+}
+.contact_form .form_bottom .form_check a:hover {
+  transition: 0.3s ease-out;
+  color: #D7A449;
+}
+.contact_form .form_bottom .form_submit input {
+  display: block;
+  padding: 8px 48px;
+  border: solid 2px #45B573;
+  background: none;
+  cursor: pointer;
+  width: max-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: #45B573;
+  transition: 0.3s ease-in;
+}
+.contact_form .form_bottom .form_submit input:hover {
+  transition: 0.3s ease-out;
+  border: solid 2px #D7A449;
+  color: #D7A449;
+}
+
+.trouver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.trouver .trouver_infos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.trouver .trouver_infos h2 {
+  color: #D7A449;
+  font-family: "Cormorant_Garamond";
+  font-size: 2rem;
+}
+.trouver .trouver_infos hr {
+  width: 20%;
+}
+.trouver .trouver_infos p {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+.trouver .trouver_map iframe {
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px #D7A449;
 }
 
 footer {

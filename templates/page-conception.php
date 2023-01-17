@@ -12,6 +12,8 @@
     $etape3_image = get_field('image_etape3');
     $etape4_image = get_field('image_etape4');
     $resultat_image = get_field('image_resultat');
+
+    $tests = get_field('etapes');
 ?>
 
     <section class="conception">
@@ -21,41 +23,19 @@
             <p><?php echo(get_field('desc_conception'));?></p>
         </div>
         <div class="etapes">
-            <div class="etape_gauche">
-                <img src="<?php echo($etape1_image['url']);?>" width="<?php echo($etape1_image['width']);?>" height="<?php echo($etape1_image['height']);?>" alt="<?php echo($etape1_image['alt']);?>">
+            <?php foreach($tests as $test): ?>
+            <div class="etape">
+                <img src="<?php echo($test['url']);?>" width="<?php echo($test['width']);?>" height="<?php echo($test['height']);?>" alt="<?php echo($test['alt']);?>">
                 <div class="etape_texte">
-                    <h2><?php echo(get_field('titre_etape1'));?></h2>
-                    <hr>
-                    <p><?php echo(get_field('desc_etape1'));?></p>
-                </div>
-            </div>
-            <div class="etape_droite">
-                <img src="<?php echo($etape2_image['url']);?>" width="<?php echo($etape2_image['width']);?>" height="<?php echo($etape2_image['height']);?>" alt="<?php echo($etape2_image['alt']);?>">
-                <div class="etape_texte">
-                    <h2><?php echo(get_field('titre_etape2'));?></h2>
-                    <hr>
-                    <div class="texte_flex">
-                        <p><?php echo(get_field('desc_etape2'));?></p>
+                    <div class="etape_flex">
+                        <h2><?php echo($test['title']);?></h2>
+                        <h3><?php echo($test['caption']);?></h3>
                     </div>
-                </div>
-            </div>
-            <div class="etape_gauche">
-                <img src="<?php echo($etape3_image['url']);?>" width="<?php echo($etape3_image['width']);?>" height="<?php echo($etape3_image['height']);?>" alt="<?php echo($etape3_image['alt']);?>">
-                <div class="etape_texte">
-                    <h2><?php echo(get_field('titre_etape3'));?></h2>
                     <hr>
-                    <p><?php echo(get_field('desc_etape3'));?></p>
+                    <p><?php echo($test['description']);?></p>
                 </div>
             </div>
-            <div class="etape_droite">
-                <img src="<?php echo($etape4_image['url']);?>" width="<?php echo($etape4_image['width']);?>" height="<?php echo($etape4_image['height']);?>" alt="<?php echo($etape4_image['alt']);?>">
-                <div class="etape_texte">
-                    <h2><?php echo(get_field('titre_etape4'));?></h2>
-                    <hr>
-                    <p><?php echo(get_field('desc_etape4'));?></p>
-                </div>
-            </div>
-        </div>
+            <?php endforeach; ?>
     </section>
 
     <section class="resultat">

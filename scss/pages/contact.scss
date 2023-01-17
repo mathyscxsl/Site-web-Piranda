@@ -1,0 +1,184 @@
+.contact {
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    .contact_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    h1 {
+        color: #D7A449;
+        font-family: "Cormorant_Garamond";
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    hr {
+        width: 25%;
+    }
+
+    p {
+        max-width: 50%;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 1rem;
+        line-height: 3vh;
+    }
+}
+
+.contact_form {
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+
+    .form_top {
+        display: flex;
+    }
+
+    .form_info {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        max-width: 30vw;
+        padding: 64px;
+        font-family: "Roboto";
+        text-align: center;
+        background-color: #363636;
+
+        p {
+            color: #FFFFFF;
+            font-family: "Roboto";
+            font-size: 1.2rem;
+        }
+
+        #title {
+            color: #D7A449;
+            font-size: 1.5rem;
+        }
+    }
+
+    form {
+        width: 50vw;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        padding-left: 16px;
+
+        label {
+            color: #A7A7A7;
+            font-family: "Roboto";
+            text-transform: uppercase;
+        }
+
+        input,
+        textarea {
+            padding: 16px;
+            background-color: #363636;
+            border: none;
+            resize: none;
+            color: #FFFFFF;
+            font-family: "Roboto";
+        }
+
+        input {
+            height: 10%;
+        }
+    }
+
+    .form_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-top: 16px;
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 0.8rem;
+
+        .form_check {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 8px;
+
+            a {
+                font-weight: bold;
+                color: #45B573;
+                text-decoration: none;
+            }
+
+            a:hover {
+                transition: 0.3s ease-out;
+                color: #D7A449;
+            }
+        }
+
+        .form_submit {
+            input {
+                display: block;
+                padding: 8px 48px;
+                border: solid 2px #45B573;
+                background: none;
+                cursor: pointer;
+                width: max-content;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: "Roboto";
+                font-size: 0.9rem;
+                color: #45B573;
+                transition: 0.3s ease-in;
+            }
+
+            input:hover {
+                transition: 0.3s ease-out;
+                border: solid 2px #D7A449;
+                color: #D7A449;
+            }
+        }
+    }
+}
+
+.trouver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    .trouver_infos {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h2 {
+            color: #D7A449;
+            font-family: "Cormorant_Garamond";
+            font-size: 2rem;
+        }
+
+        hr {
+            width: 20%;
+        }
+
+        p {
+            color: #FFFFFF;
+            font-family: "Roboto";
+            font-size: 1rem;
+        }
+    }
+
+    .trouver_map iframe {
+        border-radius: 15px;
+        box-shadow: 5px 2px 2px #D7A449;
+    }
+}
