@@ -55,7 +55,8 @@
 
 header {
   background-color: #222222;
-  position: static;
+  position: sticky;
+  top: 0;
   z-index: 1;
   width: 100%;
   padding: 16px;
@@ -415,6 +416,34 @@ section {
   transition: 0.3s ease-out;
   border: solid 2px #D7A449;
   color: #D7A449;
+}
+
+.profil,
+.galerie_profil {
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profil {
+  display: flex;
+  gap: 32px;
+}
+.profil img {
+  width: 400px;
+  height: 400px;
+}
+
+.galerie_profil_images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.galerie_profil_images img {
+  width: 300px;
+  height: 300px;
 }
 
 footer {
