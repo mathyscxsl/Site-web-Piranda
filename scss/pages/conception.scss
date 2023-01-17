@@ -1,0 +1,101 @@
+.conception {
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    .conception_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    h1 {
+        color: #D7A449;
+        font-family: "Cormorant_Garamond";
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    hr {
+        width: 25%;
+    }
+
+    p {
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 1rem;
+        line-height: 3vh;
+    }
+
+    .etapes {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        margin-top: 16vh;
+
+        .etape_gauche,
+        .etape_droite {
+            display: flex;
+            gap: 32px;
+
+            h2 {
+                color: #D7A449;
+                font-family: 'Cormorant_Garamond';
+                font-weight: bold;
+                font-size: 2rem;
+            }
+        }
+
+        .etape_droite {
+            flex-direction: row-reverse;
+
+            .etape_texte {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                text-align: end;
+            }
+        }
+
+        .etape_texte {
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+}
+
+.resultat {
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-width: 75vw;
+        height: auto;
+    }
+
+    h2 {
+        color: #D7A449;
+        font-family: 'Cormorant_Garamond';
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    hr {
+        width: 25%;
+    }
+
+    p {
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 0.9rem;
+        line-height: 3vh;
+    }
+}

@@ -19,10 +19,12 @@
 
     // Foreach images de la galerie
     $images = get_field('galerie_photo');
+
+    $video = get_field('video_accueil');
 ?>
     
     <div class="video">
-        <video loop muted autoplay="autoplay" playsinline src="http://localhost/piranda/wp-content/uploads/2023/01/test.mp4"></video>
+        <video loop muted autoplay="autoplay" playsinline src="<?php echo($video['url']);?>"></video>
     </div>
 
     <section class="entreprise">

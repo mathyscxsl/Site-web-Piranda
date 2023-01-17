@@ -142,7 +142,7 @@ section {
 .entreprise .entreprise-texte h3 {
   font-family: "Cormorant_Garamond";
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #D7A449;
 }
 .entreprise .entreprise-texte hr {
@@ -199,7 +199,7 @@ section {
 .travail .travail-texte h3 {
   font-family: "Cormorant_Garamond";
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #D7A449;
 }
 .travail .travail-texte hr {
@@ -270,7 +270,7 @@ section {
 .sur_mesure_texte h3 {
   font-family: "Cormorant_Garamond";
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #D7A449;
 }
 .fait_main_texte hr,
@@ -438,7 +438,7 @@ section {
   color: #D7A449;
   font-family: "Cormorant_Garamond";
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .profil p {
   max-width: 75%;
@@ -474,6 +474,95 @@ section {
 .galerie_profil .galerie_profil_images img {
   width: 300px;
   height: 300px;
+}
+
+.conception {
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.conception .conception_top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.conception h1 {
+  color: #D7A449;
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.conception hr {
+  width: 25%;
+}
+.conception p {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 1rem;
+  line-height: 3vh;
+}
+.conception .etapes {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin-top: 16vh;
+}
+.conception .etapes .etape_gauche,
+.conception .etapes .etape_droite {
+  display: flex;
+  gap: 32px;
+}
+.conception .etapes .etape_gauche h2,
+.conception .etapes .etape_droite h2 {
+  color: #D7A449;
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2rem;
+}
+.conception .etapes .etape_droite {
+  flex-direction: row-reverse;
+}
+.conception .etapes .etape_droite .etape_texte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+.conception .etapes .etape_texte {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.resultat {
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resultat img {
+  max-width: 75vw;
+  height: auto;
+}
+.resultat h2 {
+  color: #D7A449;
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2rem;
+}
+.resultat hr {
+  width: 25%;
+}
+.resultat p {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  line-height: 3vh;
 }
 
 footer {

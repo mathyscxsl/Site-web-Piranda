@@ -6,7 +6,7 @@
     // Header
     get_header();
 
-    // On récupère les informations relatives aux images de chaque section de la page index (image, alt..)
+    // On récupère les informations relatives aux images de chaque section de la page artisan (image, alt..)
     $image_profil = get_field('image_profil');
 
     // Foreach images de la galerie
