@@ -9,42 +9,42 @@
 
 @font-face {
   font-family: "Cormorant_Garamond";
-  src: url("../fonts/CormorantGaramond-Medium.woff2") format("woff2"), url("../fonts/CormorantGaramond-Medium.woff") format("woff");
+  src: url("../font/CormorantGaramond-Medium.woff2") format("woff2"), url("../font/CormorantGaramond-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Cormorant_Garamond";
-  src: url("../fonts/CormorantGaramond-Regular.woff2") format("woff2"), url("../fonts/CormorantGaramond-Regular.woff") format("woff");
+  src: url("../font/CormorantGaramond-Regular.woff2") format("woff2"), url("../font/CormorantGaramond-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Cormorant_Garamond";
-  src: url("../fonts/CormorantGaramond-Bold.woff2") format("woff2"), url("../fonts/CormorantGaramond-Bold.woff") format("woff");
+  src: url("../font/CormorantGaramond-Bold.woff2") format("woff2"), url("../font/CormorantGaramond-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff");
+  src: url("../font/Roboto-Bold.woff2") format("woff2"), url("../font/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  src: url("../font/Roboto-Medium.woff2") format("woff2"), url("../font/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/uploads/2023/01/fonts/Roboto-Regular.woff") format("woff");
+  src: url("../font/Roboto-Regular.woff2") format("woff2"), url("../font/uploads/2023/01/fonts/Roboto-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -55,7 +55,7 @@
 
 header {
   background-color: #222222;
-  position: fixed;
+  position: static;
   z-index: 1;
   width: 100%;
   padding: 16px;

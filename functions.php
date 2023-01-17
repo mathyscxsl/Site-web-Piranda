@@ -5,7 +5,7 @@
 
     // Load JS
     wp_enqueue_script('app', get_template_directory_uri().'/js/header.js', array(), 1, 'all');
-
+    
     // Fonction de débug
     function debug($vars) {
         echo('<pre>');
