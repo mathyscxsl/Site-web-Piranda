@@ -17,6 +17,7 @@
         <img src="<?php echo($image_profil['url']);?>" width="<?php echo($image_profil['width']);?>" height="<?php echo($image_profil['height']);?>" alt="<?php echo($image_profil['alt']);?>">
         <div class="profil_texte">
             <h1><?php echo(the_field('titre_profil'));?></h1>
+            <hr>
             <p><?php echo(the_field('desc_profil'));?></p>
         </div>
     </section>
@@ -30,6 +31,11 @@
             </article>
             <?php endforeach; ?>
         </div>
+    </section>
+
+    <section class="contact_btn">
+        <a href="#">Contactez moi !</a>
+        <a href="#">Retourner à l'accueil</a>
     </section>
 
 <?php
