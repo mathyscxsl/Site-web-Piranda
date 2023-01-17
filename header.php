@@ -8,7 +8,7 @@
         <?php wp_head(); ?>
     </head>
     <body class="site">
-        <header>
+        <header id="navbar">
             <nav>
                 <ul>
                     <li><a href="./accueil" id="link">Accueil</a></li>
