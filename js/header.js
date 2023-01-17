@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('scroll', (e) => {
         const actualScrollValue = window.scrollY; // On récupère la valeur intitale du scroll
         if (actualScrollValue === 0) { // Instruction si le niveau de scroll est à 0 (haut de page)
-            navbar.style.position = 'static'; // Alors on affiche la barre de navigation
+            navbar.style.position = 'static'; // Alors on affiche mets la barre de navigation en static pour qu'elle soit un bloc
         } else {
-            navbar.style.position = 'fixed'; // Sinon on ne l'affiche pas
+            navbar.style.position = 'fixed'; // Dès que l'utilisateur scroll la page, la navbar est fixée
         }
     });
 });
