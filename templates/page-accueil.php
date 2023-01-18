@@ -12,12 +12,14 @@
     $image_fait_main = get_field('image_fait_main');
     $image_sur_mesure = get_field('image_sur_mesure');
 
-    $image_atout1 = get_field('image_atout1');
-    $image_atout2 = get_field('image_atout2');
 
     $image_galerie_top = get_field('image_galerie_top');
 
-    // Foreach images de la galerie
+    // Variable pour le foreach atouts
+    $atouts = get_field('atouts');
+
+
+    // Variable pour le foreach images de la galerie
     $images = get_field('galerie_photo');
 
     $video = get_field('video_accueil');
@@ -73,20 +75,15 @@
             </div>
         </div>
         <div class="qualites_atouts">
+            <?php foreach($atouts as $atout): ?>
             <div class="qualites_atout">
-                <img src="<?php echo($image_atout1['url']);?>" width="<?php echo($image_atout1['width']);?>" height="<?php echo($image_atout1['height']);?>" alt="<?php echo($image_atout1['alt']);?>">
+                <img src="<?php echo($atout['image_atout']['url']);?>" width="<?php echo($atout['image_atout']['width']);?>" height="<?php echo($atout['image_atout']['height']);?>" alt="<?php echo($atout['image_atout']['alt']);?>">
                 <div class="qualites_texte">
-                    <p><?php echo(the_field('titre_atout1'));?></p>
-                    <p><?php echo(the_field('desc_atout1'));?></p>
+                    <p><?php echo($atout['titre_atout']);?></p>
+                    <p><?php echo($atout['desc_atout']);?></p>
                 </div>
             </div>
-            <div class="qualites_atout">
-                <img src="<?php echo($image_atout2['url']);?>" width="<?php echo($image_atout2['width']);?>" height="<?php echo($image_atout2['height']);?>" alt="<?php echo($image_atout2['alt']);?>">
-                <div class="qualites_texte">
-                    <p><?php echo(the_field('titre_atout2'));?></p>
-                    <p><?php echo(the_field('desc_atout2'));?></p>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </section>
 
@@ -101,10 +98,10 @@
         <div class="galerie_images">
             <?php foreach($images as $image): ?>
             <article>
-                <img src="<?php echo($image['url']);?>" width="<?php echo($image['width']);?>" height="<?php echo($image['height']);?>" alt="<?php echo($image['alt']);?>">
+                <img src="<?php echo($image['image_photo']['url']);?>" width="<?php echo($image['image_photo']['width']);?>" height="<?php echo($image['image_photo']['height']);?>" alt="<?php echo($image['image_photo']['alt']);?>">
                 <div class="images_hover">
-                    <p><?php echo($image['title']);?></p>
-                    <p><?php echo($image['description']);?></p>
+                    <p><?php echo($image['titre_photo']);?></p>
+                    <p><?php echo($image['desc_photo']);?></p>
                 </div>
             </article>
             <?php endforeach; ?>

@@ -7,13 +7,8 @@
     get_header();
 
     // On récupère les informations relatives aux images de chaque section de la page conception (image, alt..)
-    $etape1_image = get_field('image_etape1');
-    $etape2_image = get_field('image_etape2');
-    $etape3_image = get_field('image_etape3');
-    $etape4_image = get_field('image_etape4');
+    $etapes = get_field('etapes');
     $resultat_image = get_field('image_resultat');
-
-    $tests = get_field('etapes');
 ?>
 
     <section class="conception">
@@ -23,16 +18,16 @@
             <p><?php echo(get_field('desc_conception'));?></p>
         </div>
         <div class="etapes">
-            <?php foreach($tests as $test): ?>
+            <?php foreach($etapes as $etape):?>
             <div class="etape">
-                <img src="<?php echo($test['url']);?>" width="<?php echo($test['width']);?>" height="<?php echo($test['height']);?>" alt="<?php echo($test['alt']);?>">
+                <img src="<?php echo($etape['image_etape']['url']);?>" width="<?php echo($etape['image_etape']['width']);?>" height="<?php echo($etape['image_etape']['height']);?>" alt="<?php echo($etape['image_etape']['alt']);?>">
                 <div class="etape_texte">
                     <div class="etape_flex">
-                        <h2><?php echo($test['title']);?></h2>
-                        <h3><?php echo($test['caption']);?></h3>
+                        <h2>Étape n°<?php echo($etape['numero_etape']);?></h2>
+                        <h3><?php echo($etape['nom_etape']);?></h3>
                     </div>
                     <hr>
-                    <p><?php echo($test['description']);?></p>
+                    <p><?php echo($etape['image_etape']['description']);?></p>
                 </div>
             </div>
             <?php endforeach; ?>

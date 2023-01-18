@@ -149,6 +149,10 @@ section {
   align-items: center;
   gap: 5%;
 }
+.entreprise img {
+  width: 600px;
+  height: 500px;
+}
 .entreprise .entreprise-texte {
   display: flex;
   flex-direction: column;
@@ -269,6 +273,12 @@ section {
   gap: 10%;
 }
 
+.fait_main_image img,
+.sur_mesure_image img {
+  width: 500px;
+  height: 500px;
+}
+
 .sur_mesure {
   flex-direction: row-reverse;
 }
@@ -311,15 +321,18 @@ section {
 }
 
 .qualites_atouts {
-  display: flex;
   max-width: 75vw;
   margin-left: auto;
   margin-right: auto;
-}
-
-.qualites_atout {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+}
+.qualites_atouts .qualites_atout {
+  width: 35%;
+  display: flex;
+  gap: 24px;
 }
 
 .qualites_texte {
@@ -328,7 +341,6 @@ section {
   gap: 4px;
 }
 .qualites_texte p {
-  max-width: 70%;
   color: #FFFFFF;
   font-family: "Roboto";
 }
@@ -364,12 +376,12 @@ section {
 }
 
 .galerie_images {
+  max-width: 75vw;
+  margin: 48px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  justify-content: space-between;
-  max-width: 75vw;
-  margin: 48px auto 0 auto;
+  justify-content: flex-start;
 }
 .galerie_images img {
   width: 250px;
@@ -509,6 +521,10 @@ section {
   align-items: center;
   gap: 16px;
 }
+.conception .conception_top p {
+  max-width: 50%;
+  text-align: center;
+}
 .conception h1 {
   color: #D7A449;
   font-family: "Cormorant_Garamond";
@@ -545,6 +561,10 @@ section {
   font-family: "Cormorant_Garamond";
   font-weight: bold;
   font-size: 1.8rem;
+}
+.conception .etapes .etape img {
+  width: 300px;
+  height: 300px;
 }
 .conception .etapes .etape:nth-child(even) {
   flex-direction: row-reverse;
