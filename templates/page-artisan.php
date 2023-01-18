@@ -11,6 +11,9 @@
 
     // Foreach images de la galerie
     $images_profil = get_field('galerie_profil');
+
+    // On récupère les informations relatives aux boutons (liens, noms)
+    $fin_page_artisan = get_field('fin_page_artisan');
 ?>
 
     <section class="profil">
@@ -34,8 +37,8 @@
     </section>
 
     <section class="contact_btn">
-        <a href="#">Contactez moi !</a>
-        <a href="#">Retourner à l'accueil</a>
+        <a href="<?php echo($fin_page_artisan['lien_page_contact']);?>"><?php echo($fin_page_artisan['nom_bouton_contact']);?></a>
+        <a href="<?php echo($fin_page_artisan['lien_page_accueil']);?>"><?php echo($fin_page_artisan['nom_bouton_retour_accueil']);?></a>
     </section>
 
 <?php

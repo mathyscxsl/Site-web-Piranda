@@ -65,34 +65,6 @@
         }
     }
 
-    form {
-        width: 50vw;
-        display: flex;
-        gap: 16px;
-        flex-direction: column;
-        padding-left: 16px;
-
-        label {
-            color: #A7A7A7;
-            font-family: "Roboto";
-            text-transform: uppercase;
-        }
-
-        input,
-        textarea {
-            padding: 16px;
-            background-color: #363636;
-            border: none;
-            resize: none;
-            color: #FFFFFF;
-            font-family: "Roboto";
-        }
-
-        input {
-            height: 10%;
-        }
-    }
-
     .form_bottom {
         display: flex;
         flex-direction: column;
@@ -143,6 +115,84 @@
                 color: #D7A449;
             }
         }
+    }
+}
+
+.contact_form {
+    #wpforms-306 {
+        width: 50vw;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        padding-left: 16px;
+
+        .wpforms-field-label {
+            color: #A7A7A7;
+            font-family: "Roboto";
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        #wpforms-306-field_0,
+        #wpforms-306-field_1,
+        #wpforms-306-field_2,
+        #wpforms-306-field_3 {
+            padding: 16px;
+            background-color: #363636;
+            border: none;
+            resize: none;
+            color: #FFFFFF;
+            font-family: "Roboto";
+        }
+
+        #wpforms-306-field_0,
+        #wpforms-306-field_1,
+        #wpforms-306-field_3 {
+            height: 10%;
+        }
+
+        .wpforms-field-label-inline {
+            color: #A7A7A7;
+            font-family: "Roboto";
+            font-weight: normal;
+
+            a {
+                font-weight: bold;
+                color: #45B573;
+                text-decoration: none;
+            }
+
+            a:hover {
+                transition: 0.3s ease-out;
+                color: #D7A449;
+            }
+        }
+
+        #wpforms-submit-306 {
+            display: block;
+            padding: 8px 48px;
+            border: solid 2px #45B573;
+            background: none;
+            cursor: pointer;
+            width: max-content;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: "Roboto";
+            font-size: 0.9rem;
+            color: #45B573;
+            transition: 0.3s ease-in;
+        }
+
+        #wpforms-submit-306:hover {
+            transition: 0.3s ease-out;
+            border: solid 2px #D7A449;
+            color: #D7A449;
+        }
+    }
+
+    div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+        max-width: 100%;
     }
 }
 

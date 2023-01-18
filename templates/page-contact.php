@@ -23,34 +23,7 @@
                 <p id='title'><?php echo(the_field('phrase_contact_tel'));?></p>
                 <p><?php echo(the_field('tel_contact'));?></p>
             </div>
-            <form action="#" method="POST">
-                <label for="name">Prénom / Nom</label>
-                <input type="text" placeholder="Baptiste Piranda" name="name" required>
-                <label for="subject">Objet</label>
-                <input type="text" placeholder="Projet meuble..." name="subject" required>
-                <label for="subject">Adresse e-mail</label>
-                <input type="email" placeholder="b.piranda@laposte.net" name="email" required>
-                <label for="message">Message</label>
-                <textarea placeholder="Bonjour, je vous contacte pour parler d'un projet..." rows="10" id="message" name="message"></textarea>
-                </div>
-                <div class="form_bottom">
-                    <div class="form_check">
-                        <label for="check">En cochant vous acceptez les <a href="#">conditions générales d'utilisation</a></label>
-                        <input type="checkbox" name="check" id="check" required>
-                    </div>
-                    <div class="form_submit">
-                        <input type="submit" name="formulaire" value="Envoyer">
-                    </div>
-                    <?php
-                    if (isset($_POST['formulaire'])) {
-                        $envoisucces = mail('b.piranda@laposte.net', 'Message depuis le site web', $_POST['message'], 'Message de '.$_POST['name'].' ('.$_POST['email'].')');
-                        if($envoisucces)
-                            echo '<p>Votre message a bien été envoyé.</p>';
-                        else echo "<p>Echec de l'envoi du message.</p>";
-                    }
-                    ?>
-                </div>
-            </form>
+            <?php echo(do_shortcode('[wpforms id="306"]'));?>
     </section>
 
     <section class="trouver">

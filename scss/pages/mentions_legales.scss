@@ -1,0 +1,61 @@
+.mentions {
+    max-width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    h2 {
+        color: #D7A449;
+        font-family: 'Cormorant_Garamond';
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    h3 {
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    h4 {
+        margin-top: 8px;
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    p {
+        margin: 16px 0;
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 0.8rem;
+    }
+
+    .flex-texte {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+    }
+
+    ol li {
+        padding: 8px;
+        color: #FFFFFF;
+        font-family: "Roboto";
+        font-size: 0.8rem;
+    }
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+
+    img {
+        width: 150px;
+        height: 100px;
+    }
+}

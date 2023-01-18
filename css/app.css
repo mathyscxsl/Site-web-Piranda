@@ -80,7 +80,6 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  width: 100%;
   padding: 16px;
 }
 header nav ul {
@@ -424,6 +423,7 @@ section {
 }
 
 .contact_btn {
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -675,30 +675,6 @@ section {
   color: #D7A449;
   font-size: 1.5rem;
 }
-.contact_form form {
-  width: 50vw;
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
-  padding-left: 16px;
-}
-.contact_form form label {
-  color: #A7A7A7;
-  font-family: "Roboto";
-  text-transform: uppercase;
-}
-.contact_form form input,
-.contact_form form textarea {
-  padding: 16px;
-  background-color: #363636;
-  border: none;
-  resize: none;
-  color: #FFFFFF;
-  font-family: "Roboto";
-}
-.contact_form form input {
-  height: 10%;
-}
 .contact_form .form_bottom {
   display: flex;
   flex-direction: column;
@@ -744,6 +720,73 @@ section {
   color: #D7A449;
 }
 
+.contact_form #wpforms-306 {
+  width: 50vw;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  padding-left: 16px;
+}
+.contact_form #wpforms-306 .wpforms-field-label {
+  color: #A7A7A7;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.contact_form #wpforms-306 #wpforms-306-field_0,
+.contact_form #wpforms-306 #wpforms-306-field_1,
+.contact_form #wpforms-306 #wpforms-306-field_2,
+.contact_form #wpforms-306 #wpforms-306-field_3 {
+  padding: 16px;
+  background-color: #363636;
+  border: none;
+  resize: none;
+  color: #FFFFFF;
+  font-family: "Roboto";
+}
+.contact_form #wpforms-306 #wpforms-306-field_0,
+.contact_form #wpforms-306 #wpforms-306-field_1,
+.contact_form #wpforms-306 #wpforms-306-field_3 {
+  height: 10%;
+}
+.contact_form #wpforms-306 .wpforms-field-label-inline {
+  color: #A7A7A7;
+  font-family: "Roboto";
+  font-weight: normal;
+}
+.contact_form #wpforms-306 .wpforms-field-label-inline a {
+  font-weight: bold;
+  color: #45B573;
+  text-decoration: none;
+}
+.contact_form #wpforms-306 .wpforms-field-label-inline a:hover {
+  transition: 0.3s ease-out;
+  color: #D7A449;
+}
+.contact_form #wpforms-306 #wpforms-submit-306 {
+  display: block;
+  padding: 8px 48px;
+  border: solid 2px #45B573;
+  background: none;
+  cursor: pointer;
+  width: max-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  color: #45B573;
+  transition: 0.3s ease-in;
+}
+.contact_form #wpforms-306 #wpforms-submit-306:hover {
+  transition: 0.3s ease-out;
+  border: solid 2px #D7A449;
+  color: #D7A449;
+}
+.contact_form div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+  max-width: 100%;
+}
+
 .trouver {
   display: flex;
   align-items: center;
@@ -774,6 +817,81 @@ section {
 .trouver .trouver_map iframe {
   border-radius: 15px;
   box-shadow: 5px 2px 2px #D7A449;
+}
+
+.mentions {
+  max-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mentions h2 {
+  color: #D7A449;
+  font-family: "Cormorant_Garamond";
+  font-weight: bold;
+  font-size: 2rem;
+}
+.mentions h3 {
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.mentions h4 {
+  margin-top: 8px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.mentions p {
+  margin: 16px 0;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+}
+.mentions .flex-texte {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.mentions ol li {
+  padding: 8px;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.logos img {
+  width: 150px;
+  height: 100px;
+}
+
+.err404 {
+  max-width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.err404 h1 {
+  font-weight: 10;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 10em;
+}
+.err404 p {
+  max-width: 50%;
+  margin: 0 auto;
+  line-height: 4vh;
+  color: #FFFFFF;
+  font-family: "Roboto";
 }
 
 footer {

@@ -6,23 +6,29 @@
     // Header
     get_header();
 
+    // Lien vers la vidéo de fond
+    $video = get_field('video_accueil');
+
+    // Récupération du contenu des boutons (lien/phrase)
+    $bouton_artisan = get_field('bouton_artisan');
+    $bouton_conception = get_field('bouton_conception');
+    $fin_page = get_field('fin_page_accueil');
+
     // On récupère les informations relatives aux images de chaque section de la page index (image, alt..)
     $image_entreprise = get_field('image_entreprise');
     $image_travail = get_field('image_travail');
     $image_fait_main = get_field('image_fait_main');
     $image_sur_mesure = get_field('image_sur_mesure');
 
-
+    // On récupère l'image au sommet de la section de la galerie
     $image_galerie_top = get_field('image_galerie_top');
 
     // Variable pour le foreach atouts
     $atouts = get_field('atouts');
 
-
     // Variable pour le foreach images de la galerie
     $images = get_field('galerie_photo');
 
-    $video = get_field('video_accueil');
 ?>
     
     <div class="video">
@@ -36,7 +42,7 @@
             <h3><?php echo(the_field('titre_paragraphe_entreprise'));?></h3>
             <hr>
             <p><?php echo(the_field('paragraphe_entreprise'));?></p>
-            <a href="#">L'artisan</a>
+            <a href="<?php echo($bouton_artisan['lien_page_artisan']);?>"><?php echo($bouton_artisan['nom_bouton_artisan']);?></a>
         </div>
     </section>
 
@@ -47,7 +53,7 @@
             <h3><?php echo(the_field('titre_paragraphe_travail'));?></h3>
             <hr>
             <p><?php echo(the_field('paragraphe_travail'));?></p>
-            <a href="#">Conception</a>
+            <a href="<?php echo($bouton_conception['lien_page_conception']);?>"><?php echo($bouton_conception['nom_bouton_conception']);?></a>
         </div>
     </section>
 
@@ -109,8 +115,8 @@
     </section>
 
     <section class="contact_btn">
-        <p>Vous avez un projet similaire ?</p>
-        <a href="#">Contactez moi !</a>
+        <p><?php echo($fin_page['paragraphe_projet']);?></p>
+        <a href="<?php echo($fin_page['lien_contact']);?>"><?php echo($fin_page['nom_bouton_contact']);?></a>
     </section>
 
 <?php

@@ -9,6 +9,9 @@
     // On récupère les informations relatives aux images de chaque section de la page conception (image, alt..)
     $etapes = get_field('etapes');
     $resultat_image = get_field('image_resultat');
+
+    // On récupère les informations vers le bouton contact
+    $bouton_contact = get_field('bouton_page_contact');
 ?>
 
     <section class="conception">
@@ -41,7 +44,7 @@
     </section>
 
     <section class="contact_btn">
-        <a href="#">Contactez moi !</a>
+        <a href="<?php echo($bouton_contact['lien_page_contact']);?>"><?php echo($bouton_contact['nom_bouton_contact']);?></a>
     </section>
 
 <?php
