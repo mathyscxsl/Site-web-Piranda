@@ -11,11 +11,11 @@
         <header id="navbar">
             <nav>
                 <ul>
-                    <li><a href="./accueil" id="link">Accueil</a></li>
-                    <li><a href="./artisan" id="link">L'artisan</a></li>
-                    <li><a href="./accueil"><img src="http://localhost/piranda/wp-content/uploads/2023/01/logo.svg" alt="Logo de l'entreprise PIRANDA Ébénisterie"></a></li>
-                    <li><a href="./conception" id="link">Conception</a></li>
-                    <li><a href="./contact" id="link">Contact</a></li>
+                    <li><a href="http://localhost/piranda" id="link">Accueil</a></li>
+                    <li><a href="http://localhost/piranda/artisan" id="link">L'artisan</a></li>
+                    <li><a href="http://localhost/piranda"><img src="http://localhost/piranda/wp-content/uploads/2023/01/logo.svg" alt="Logo de l'entreprise PIRANDA Ébénisterie"></a></li>
+                    <li><a href="http://localhost/piranda/conception" id="link">Conception</a></li>
+                    <li><a href="http://localhost/piranda/contact" id="link">Contact</a></li>
                 </ul>
             </nav>
         </header>

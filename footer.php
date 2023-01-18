@@ -4,13 +4,13 @@
                 <div class="footer_left">
                     <p>Liens rapides</p>
                     <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Profil</a></li>
-                        <li><a href="#">Conception</a></li>
-                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="http://localhost/piranda/">Contact</a></li>
+                        <li><a href="http://localhost/piranda/artisan/">Profil</a></li>
+                        <li><a href="http://localhost/piranda/conception">Conception</a></li>
+                        <li><a href="http://localhost/piranda/mentions-legales/">Mentions légales</a></li>
                     </ul>
                 </div>
-                <a href="#"><img src="http://localhost/piranda/wp-content/uploads/2023/01/logo.svg" alt="Logo de l'entreprise PIRANDA Ébénisterie"></a>
+                <a href="http://localhost/piranda/"><img src="http://localhost/piranda/wp-content/uploads/2023/01/logo.svg" alt="Logo de l'entreprise PIRANDA Ébénisterie"></a>
                 <div class="footer_right">
                     <p>Contacter</p>
                     <p>06.73.60.17.62</p>

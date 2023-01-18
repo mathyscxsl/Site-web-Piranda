@@ -35,7 +35,7 @@
         <video loop muted autoplay="autoplay" playsinline src="<?php echo($video['url']);?>"></video>
     </div>
 
-    <section class="entreprise">
+    <section class="entreprise" id="entreprise">
         <img src="<?php echo($image_entreprise['url']);?>" width="<?php echo($image_entreprise['width']);?>" height="<?php echo($image_entreprise['height']);?>" alt="<?php echo($image_entreprise['alt']);?>">
         <div class="entreprise-texte">
             <h2><?php echo(the_field('titre_principal_entreprise'));?></h2>
