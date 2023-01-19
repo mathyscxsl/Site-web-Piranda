@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener('scroll', (e) => {
         const actualScrollValue = window.scrollY; // On récupère la valeur intitale du scroll
 
+        // Système de repérage dans la barre de navigation avec une démarcation du titre concerné selon le chapitre de la page (couleur, taille, poids, bordure)
+        const entreprise_y = (window.scrollY - 5) + document.getElementById('entreprise').getBoundingClientRect().top; // On récupère les cordonnées veticales Y de la section qui est située après la vidéo
+
         if (actualScrollValue === '0') { // Quand on arrive sur la page, l'opacité de la barre de navigation est pleine
             navbar.style.backgroundColor = 'rgba(34,34,34,1)';
         }
-
-        // Système de repérage dans la barre de navigation avec une démarcation du titre concerné selon le chapitre de la page (couleur, taille, poids, bordure)
-        const entreprise_y = (window.scrollY - 5) + document.getElementById('entreprise').getBoundingClientRect().top; // On récupère les cordonnées veticales Y de la section qui est située après la vidéo
 
         if (actualScrollValue > entreprise_y) { // Si la valeur du scroll est strictement supérieure à la valeur du scroll ou est située la section qui succède la vidéo
             navbar.style.backgroundColor = 'rgba(34,34,34,1)'; // Alors l'opacité de la barre de navigation est pleine

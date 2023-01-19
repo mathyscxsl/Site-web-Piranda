@@ -21,12 +21,14 @@
         <div class="profil_texte">
             <h1><?php echo(the_field('titre_profil'));?></h1>
             <hr>
-            <p><?php echo(the_field('desc_profil'));?></p>
+            <div class="profil_flex">
+                <p><?php echo(the_field('desc_profil'));?></p>
+                <p><?php echo(the_field('paragraphe_profil'));?></p>
+            </div>
         </div>
     </section>
 
     <section class="galerie_profil">
-        <p><?php echo(the_field('paragraphe_profil'));?></p>
         <div class="galerie_profil_images">
             <?php foreach($images_profil as $image_profil): ?>
             <article>

@@ -1,6 +1,14 @@
 @import 'reset/reset';
 @import 'fonts/fonts';
 @import 'layout/header';
+@import 'responsive/responsive_header';
+@import 'responsive/responsive_index';
+@import 'responsive/responsive_artisan';
+@import 'responsive/responsive_conception';
+@import 'responsive/responsive_contact';
+@import 'responsive/responsive_mentions_legales';
+@import 'responsive/responsive_404';
+@import 'responsive/responsive_footer';
 @import 'pages/index';
 @import 'pages/artisan';
 @import 'pages/conception';

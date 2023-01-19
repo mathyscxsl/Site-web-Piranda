@@ -8,6 +8,8 @@
 
     $logo_usmb = get_field('logo_usmb');
     $logo_mmi = get_field('logo_mmi');
+
+    $bouton_accueil = get_field('bouton_page_accueil');
 ?>
 
     <section class="mentions">
@@ -20,7 +22,7 @@
     </section>
 
     <section class="contact_btn">
-        <a href="/accueil">Retourner à l'accueil</a>
+        <a href="<?php echo($bouton_accueil['url_page']);?>"><?php echo($bouton_accueil['nom_page']);?></a>
     </section>
 <?php
 

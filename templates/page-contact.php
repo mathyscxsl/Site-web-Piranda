@@ -33,7 +33,7 @@
             <p><?php echo(get_field('adresse_trouver'));?></p>
         </div>
         <div class="trouver_map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5413.707926575725!2d6.607222157305182!3d47.27810920735261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479275de28e13e4d%3A0x3da7f5bb02c8630!2sPIRANDA%20BAPTISTE!5e0!3m2!1sfr!2sfr!4v1673970819025!5m2!1sfr!2sfr" width="600" height="450" style="border:0;"></iframe>
+            <iframe src="<?php echo(the_field('lien_google_maps'));?>" width="600" height="450" style="border:0;"></iframe>
         </div>
     </section>
 

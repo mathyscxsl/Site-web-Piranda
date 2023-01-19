@@ -82,9 +82,43 @@ header {
     transform: scaleX(1);
 }
 
-.arrow {
+/* -------------FLECHE----------------*/
+.arrow_pos {
     position: fixed;
     z-index: 10;
     top: 90vh;
     right: 4vw;
+    transform: rotate(180deg);
+}
+
+a.arrow {
+    animation: arrow 2s infinite ease;
+    transition: 0.3s ease-in-out;
+    padding-bottom: 0%;
+}
+
+a.arrow svg {
+    transform: scale(0.5);
+    opacity: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+a.arrow svg:hover {
+    transform: scale(0.6);
+    opacity: 100%;
+}
+
+
+@keyframes arrow {
+    from {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
 }
