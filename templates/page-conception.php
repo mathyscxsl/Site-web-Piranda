@@ -27,6 +27,7 @@
                 <div class="etape_texte">
                     <div class="etape_flex">
                         <h2>Étape n°<?php echo($etape['numero_etape']);?></h2>
+                        <p>-</p>
                         <h3><?php echo($etape['nom_etape']);?></h3>
                     </div>
                     <hr>

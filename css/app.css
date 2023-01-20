@@ -76,9 +76,11 @@
 }
 
 header {
-  background-color: #222222;
-  position: sticky;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1;
   padding: 16px;
 }
@@ -670,6 +672,11 @@ section {
   display: flex;
   align-items: baseline;
   gap: 16px;
+}
+.conception .etapes .etape_texte .etape_flex p {
+  font-size: 1.5rem;
+  color: #D7A449;
+  font-family: "Cormorant_Garamond";
 }
 
 .resultat {
