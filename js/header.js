@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Fonction permettant de récupérer la position verticale du niveau de scroll de la page
     if (video !== null) {
+        navbar.style.position = 'fixed';
+        navbar.style.width = '100%';
         document.addEventListener('scroll', (e) => {
             const actualScrollValue = window.scrollY; // On récupère la valeur intitale du scroll
 

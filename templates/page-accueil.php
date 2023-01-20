@@ -38,7 +38,7 @@
     <section class="entreprise" id="entreprise">
         <img src="<?php echo($image_entreprise['url']);?>" width="<?php echo($image_entreprise['width']);?>" height="<?php echo($image_entreprise['height']);?>" alt="<?php echo($image_entreprise['alt']);?>">
         <div class="entreprise-texte">
-            <h2><?php echo(the_field('titre_principal_entreprise'));?></h2>
+            <h4><?php echo(the_field('titre_principal_entreprise'));?></h4>
             <h3><?php echo(the_field('titre_paragraphe_entreprise'));?></h3>
             <hr>
             <p><?php echo(the_field('paragraphe_entreprise'));?></p>
@@ -49,7 +49,7 @@
     <section class="travail">
         <img src="<?php echo($image_travail['url']);?>" width="<?php echo($image_travail['width']);?>" height="<?php echo($image_travail['height']);?>" alt="<?php echo($image_travail['alt']);?>">
         <div class="travail-texte">
-            <h2><?php echo(the_field('titre_principal_travail'));?></h2>
+            <h4><?php echo(the_field('titre_principal_travail'));?></h4>
             <h3><?php echo(the_field('titre_paragraphe_travail'));?></h3>
             <hr>
             <p><?php echo(the_field('paragraphe_travail'));?></p>
@@ -63,21 +63,21 @@
                 <img src="<?php echo($image_fait_main['url']);?>" width="<?php echo($image_fait_main['width']);?>" height="<?php echo($image_fait_main['height']);?>" alt="<?php echo($image_fait_main['alt']);?>">
             </div>
             <div class="fait_main_texte">
-                <h2><?php echo(the_field('titre_principal_fait_main'));?></h2>
+                <h4><?php echo(the_field('titre_principal_fait_main'));?></h4>
                 <h3><?php echo(the_field('titre_paragraphe_fait_main'));?></h3>
                 <hr>
                 <p><?php echo(the_field('paragraphe_fait_main'));?></p>
             </div>
         </div>
         <div class="sur_mesure">
-            <div class="sur_mesure_image">
-                <img src="<?php echo($image_sur_mesure['url']);?>" width="<?php echo($image_sur_mesure['width']);?>" height="<?php echo($image_sur_mesure['height']);?>" alt="<?php echo($image_sur_mesure['alt']);?>">
-            </div>
             <div class="sur_mesure_texte">
-                <h2><?php echo(the_field('titre_principal_sur_mesure'));?></h2>
+                <h4><?php echo(the_field('titre_principal_sur_mesure'));?></h4>
                 <h3><?php echo(the_field('titre_paragraphe_sur_mesure'));?></h3>
                 <hr>
                 <p><?php echo(the_field('paragraphe_sur_mesure'));?></p>
+            </div>
+            <div class="sur_mesure_image">
+                <img src="<?php echo($image_sur_mesure['url']);?>" width="<?php echo($image_sur_mesure['width']);?>" height="<?php echo($image_sur_mesure['height']);?>" alt="<?php echo($image_sur_mesure['alt']);?>">
             </div>
         </div>
         <div class="qualites_atouts">

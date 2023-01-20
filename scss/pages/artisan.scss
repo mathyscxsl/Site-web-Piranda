@@ -18,7 +18,7 @@
         color: #D7A449;
         font-family: 'Cormorant_Garamond';
         font-weight: bold;
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     p {
@@ -26,12 +26,12 @@
         line-height: 3vh;
         color: #FFFFFF;
         font-family: "Roboto";
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     hr {
         opacity: 0.5;
-        max-width: 25%;
+        max-width: 20%;
     }
 
     .profil_texte {
@@ -51,16 +51,19 @@
     p {
         color: #FFFFFF;
         font-family: "Roboto";
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         line-height: 4vh;
         text-align: center;
     }
 
     .galerie_profil_images {
+        max-width: 65vw;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         flex-wrap: wrap;
         gap: 48px;
-        justify-content: space-between;
+        justify-content: center;
         margin-top: 48px;
 
         img {

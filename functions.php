@@ -6,9 +6,6 @@
     // Load JS
     wp_enqueue_script('app', get_template_directory_uri().'/js/header.js', array(), 1, 'all');
 
-    // Import du thème pour les menus
-    add_theme_support("menus");
-
     // Header / Footer
     if( function_exists('acf_add_options_page') ) {
     
