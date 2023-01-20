@@ -31,7 +31,7 @@
 
 ?>
     
-    <div class="video">
+    <div class="video" id="video">
         <video loop muted autoplay="autoplay" playsinline src="<?php echo($video['url']);?>"></video>
     </div>
 
