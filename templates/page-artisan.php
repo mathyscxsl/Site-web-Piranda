@@ -32,7 +32,7 @@
         <div class="galerie_profil_images">
             <?php foreach($images_profil as $image_profil): ?>
             <article>
-                <img src="<?php echo($image_profil['url']);?>" width="<?php echo($image_profil['width']);?>" height="<?php echo($image_profil['height']);?>" alt="<?php echo($image_profil['alt']);?>">
+                <img src="<?php echo($image_profil['url']);?>" width="<?php echo($image_profil['width']);?>" height="<?php echo($image_profil['height']);?>" alt="Quelques photos me concernant">
             </article>
             <?php endforeach; ?>
         </div>

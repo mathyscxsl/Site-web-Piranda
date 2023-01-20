@@ -99,12 +99,11 @@
         </div>
         <div class="galerie_content">
             <h3><?php echo(the_field('titre_galerie'));?></h3>
-            <p><?php echo(the_field('desc_galerie'));?></p>
         </div>
         <div class="galerie_images">
             <?php foreach($images as $image): ?>
             <article>
-                <img src="<?php echo($image['image_photo']['url']);?>" width="<?php echo($image['image_photo']['width']);?>" height="<?php echo($image['image_photo']['height']);?>" alt="<?php echo($image['image_photo']['alt']);?>">
+                <img src="<?php echo($image['image_photo']['url']);?>" width="<?php echo($image['image_photo']['width']);?>" height="<?php echo($image['image_photo']['height']);?>" alt="Voici des images de mon travail">
                 <div class="images_hover">
                     <p><?php echo($image['titre_photo']);?></p>
                     <p><?php echo($image['desc_photo']);?></p>

@@ -124,19 +124,21 @@ section {
         a {
             display: block;
             border: solid 2px #45B573;
+            background-color: #45B573;
             padding: 8px 48px;
             width: max-content;
             text-decoration: none;
             font-family: "Roboto";
             font-size: 1rem;
-            color: #45B573;
+            color: #FFFFFF;
             transition: 0.3s ease-in;
         }
 
         a:hover {
             transition: 0.3s ease-out;
             border: solid 2px #D7A449;
-            color: #D7A449;
+            background-color: #D7A449;
+            color: #FFFFFF;
         }
     }
 }

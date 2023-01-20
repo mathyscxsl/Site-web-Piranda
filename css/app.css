@@ -165,9 +165,52 @@ a.arrow svg:hover {
     transform: translateY(-15px);
   }
 }
-@media (min-width: 1400px) {
-  body {
-    background-color: blue;
+.menu_burger {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0;
+  }
+  .main_nav {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .menu_burger {
+    display: block;
+    position: relative;
+  }
+  .menu_burger .burger_top {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+    position: relative;
+    z-index: 1;
+  }
+  .menu_burger .burger_top #logo_burger {
+    width: 100px;
+    height: 100px;
+  }
+  .menu_burger .burger_top #open_menu {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+  .menu_burger .menu_slide {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    background-color: #222222;
+    transform: translateY(-100%);
+    transition: 0.5s ease-in-out;
   }
 }
 video {
@@ -277,18 +320,20 @@ section {
 .travail .travail-texte a {
   display: block;
   border: solid 2px #45B573;
+  background-color: #45B573;
   padding: 8px 48px;
   width: max-content;
   text-decoration: none;
   font-family: "Roboto";
   font-size: 1rem;
-  color: #45B573;
+  color: #FFFFFF;
   transition: 0.3s ease-in;
 }
 .travail .travail-texte a:hover {
   transition: 0.3s ease-out;
   border: solid 2px #D7A449;
-  color: #D7A449;
+  background-color: #D7A449;
+  color: #FFFFFF;
 }
 
 .qualites {

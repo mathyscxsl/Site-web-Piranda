@@ -20,4 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
             navbar.style.backgroundColor = 'rgba(34,34,34,0.5)'; // Sinon elle ne l'est pas
         }
     });
+
+    function menuBurger() {
+        const menu_burger = document.getElementById('open_menu'),
+            menu_slide = document.getElementsByClassName('menu_slide');
+
+        menu_burger.addEventListener('click', (e) => {
+            if (menu_slide[0].style.transform === 'translateY(0%)') {
+                menu_slide[0].style.transform = 'translateY(-100%)';
+            } else {
+                menu_slide[0].style.transform = 'translateY(0%)';
+            }
+        });
+    }
+    menuBurger();
 });

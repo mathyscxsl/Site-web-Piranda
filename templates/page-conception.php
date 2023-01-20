@@ -30,7 +30,7 @@
                         <h3><?php echo($etape['nom_etape']);?></h3>
                     </div>
                     <hr>
-                    <p><?php echo($etape['image_etape']['description']);?></p>
+                    <p><?php echo($etape['desc_etape']);?></p>
                 </div>
             </div>
             <?php endforeach; ?>
